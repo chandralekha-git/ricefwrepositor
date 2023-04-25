@@ -1,0 +1,338 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ricefwestimator.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <IconTabBar selectedKey="__filter0" id="bar0">
+                <items>
+                    <IconTabFilter id="filter0" icon="sap-icon://sum" text="Total Count of RICEFW Known" design="Horizontal">
+                        <content>
+                        		<OverflowToolbar class="sapUiMediumMarginTop" id="1">
+                                <Label id="12" text="Total count of RICEFW Objects" labelFor="inp1"/>
+                                <Input id ="inp1"  width="10%" type="Number" valueState="Information" valueStateText="Total Count"  submit="onInp1Submit"/>
+			
+			<Button id="btn1" text="Refresh" type="Accept" icon="sap-icon://synchronize" press="refresh"/>
+
+            <Button id="btn2" text="Download" icon="sap-icon://excel-attachment" press="onDataExport" />
+		</OverflowToolbar>
+ <Table noDataText="Drop column list items here and columns in the area above" id="table0" items="{path:'model1>/'}" >
+                    <items>
+                        <ColumnListItem type="Active" id="item0">
+                            <cells>
+                                <Text text="{model1>complexity}" id="text0" />
+                                <Text text="{model1>R}" id="text1"/>
+                                <Text text="{model1>I}" id="text2"/>
+                                                                <Text text="{model1>C}" id="text3"/>
+                                <Text text="{model1>E}" id="text4"/>
+                                <Text text="{model1>F}" id="text5"/>
+                                                                <Text text="{model1>W}" id="text6"/>
+                                <Text text="{model1>T}" id="text7"/>
+                                <Text text="{model1>EF}" id="text8"/>
+                                
+          </cells>
+                        </ColumnListItem>
+
+                    </items>
+                    <columns>
+                        <Column id="column0">
+                            <header>
+                                <Label text="Complexity" id="label0"/>
+                            </header>
+                        </Column>
+                        <Column id="column1">
+                            <header>
+                                <Label text="Report" id="label1"/>
+                            </header>
+                        </Column>
+                        <Column id="column2">
+                            <header>
+                                <Label text="Interface" id="label2"/>
+                            </header>
+                        </Column>
+                       <Column id="column3">
+                            <header>
+                                <Label text="Conversion" id="label3"/>
+                            </header>
+                        </Column>
+                       <Column id="column4">
+                            <header>
+                                <Label text="Enhancement" id="label4"/>
+                            </header>
+                        </Column>
+
+                     <Column id="column5">
+                            <header>
+                                <Label text="Form" id="label5"/>
+                            </header>
+                        </Column>
+
+                                             <Column id="column6">
+                            <header>
+                                <Label text="Workflow" id="label6"/>
+                            </header>
+                        </Column>
+
+                                                                     <Column id="column7">
+                            <header>
+                                <Label text="Total Objects" id="label7"/>
+                            </header>
+                        </Column>
+                                                                     <Column id="column8">
+                            <header>
+                                <Label text="Efforts(hrs.)" id="label8"/>
+                            </header>
+                        </Column>
+                        
+                        
+                        
+                        </columns></Table>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter text="RICEFW Classification Known" icon="sap-icon://switch-classes" id="filter1" design="Horizontal" iconColor="Critical">
+                        <content>
+<OverflowToolbar class="sapUiMediumMarginTop" id="2">
+                               
+                                
+			
+			<Button id="btn12" text="Refresh" type="Accept" icon="sap-icon://synchronize" press="refresh1"/>
+
+            <Button id="btn22" text="Download" icon="sap-icon://excel-attachment" press="onDataExport1" />
+		</OverflowToolbar>
+ <Table noDataText="Drop column list items here and columns in the area above" id="table1" items="{path:'model2>/'}" >
+                    <items>
+                        <ColumnListItem type="Active" id="item09">
+                            <cells>
+                                <Text text="{model2>complexity}" id="text09" />
+                                <Text text="{model2>R}" id="text19"/>
+                                <Text text="{model2>I}" id="text29"/>
+                                                                <Text text="{model2>C}" id="text39"/>
+                                <Text text="{model2>E}" id="text49"/>
+                                <Text text="{model2>F}" id="text59"/>
+                                                                <Text text="{model2>W}" id="text69"/>
+                                <Text text="{model2>T}" id="text79"/>
+                                <Text text="{model2>EF}" id="text89"/>
+                                
+          </cells>
+                        </ColumnListItem>
+
+                     
+                    </items>
+                    <columns>
+                        <Column id="column09">
+                            <header>
+                                <Label text="Complexity" id="label09"/>
+                            </header>
+                        </Column>
+                        <Column id="column19">
+                            <header>
+                                <Label text="Report" id="label19"/>
+                            </header>
+                        </Column>
+                        <Column id="column29">
+                            <header>
+                                <Label text="Interface" id="label29"/>
+                            </header>
+                        </Column>
+                       <Column id="column39">
+                            <header>
+                                <Label text="Conversion" id="label39"/>
+                            </header>
+                        </Column>
+                       <Column id="column49">
+                            <header>
+                                <Label text="Enhancement" id="label49"/>
+                            </header>
+                        </Column>
+
+                     <Column id="column59">
+                            <header>
+                                <Label text="Form" id="label95"/>
+                            </header>
+                        </Column>
+
+                                             <Column id="column96">
+                            <header>
+                                <Label text="Workflow" id="labe9l6"/>
+                            </header>
+                        </Column>
+
+                                                                     <Column id="9column7">
+                            <header>
+                                <Label text="Total Objects" id="labe9l7"/>
+                            </header>
+                        </Column>
+                                                                     <Column id="c9olumn8">
+                            <header>
+                                <Label text="Efforts(hrs.)" id="label89"/>
+                            </header>
+                        </Column>
+                        
+                        
+                        
+                        </columns></Table>
+                        <Table noDataText="Drop column list items here and columns in the area above" id="table2"  >
+                    <items>
+
+                                                <ColumnListItem type="Active" id="item092">
+                            <cells>
+                                <Text  id="text092" />
+ <Input  id="R" type="Number" valueState="Warning"  submit="onInp2Submit" valueStateText="Reports Count" />
+ <Input id="I" type="Number" valueState="Warning" submit="onInp2Submit" valueStateText="Interfaces Count" />
+ <Input id="C" type="Number" valueState="Warning" submit="onInp2Submit" valueStateText="Conversions Count"/>
+ <Input id="E" type="Number" valueState="Warning" submit="onInp2Submit" valueStateText="Enhancements Count" />
+ <Input id="F" type="Number" valueState="Warning" submit="onInp2Submit" valueStateText="Forms Count"/>
+ <Input id="W" type="Number" valueState="Warning" submit="onInp2Submit" valueStateText="Workflows Count"/>
+                                <Text  id="te2xt79"/>
+                                <Text  id="te2xt89"/>
+                                
+          </cells>
+                        </ColumnListItem>
+
+                     
+                    </items>
+                    <columns>
+                        <Column id="column209">
+                    
+                        </Column>
+                        <Column id="colum2n19">
+                            
+                        </Column>
+                        <Column id="colu2mn29">
+
+                        </Column>
+                       <Column id="colu2mn39">
+
+                        </Column>
+                       <Column id="colum2n49">
+
+                        </Column>
+
+                     <Column id="col2umn59">
+
+                        </Column>
+
+                                             <Column id="co2umn96">
+
+                        </Column>
+
+                                                                     <Column id="9col2umn7">
+
+                        </Column>
+                                                                     <Column id="c9ol2umn8">
+
+                        </Column>
+                        
+                        
+                        
+                        </columns></Table>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter text=" RICEFW Classification + Complexity Known" icon="sap-icon://process" iconColor="Positive" id="filter2" design="Horizontal">
+                     <content>
+<OverflowToolbar class="sapUiMediumMarginTop" id="23">
+                               
+                                
+			
+			<Button id="bt2n12" text="Refresh" type="Accept" icon="sap-icon://synchronize" press="refresh2"/>
+
+            <Button id="btn222" text="Download" icon="sap-icon://excel-attachment" press="onDataExport2" />
+		</OverflowToolbar>
+ <Table noDataText="Drop column list items here and columns in the area above" id="table3" items="{path:'model3>/'}" >
+                    <items>
+                        <ColumnListItem type="Active" id="item309">
+                            <cells>
+                                <Text text="{model3>complexity}" id="tex3t09" />
+                               <HBox id="21"> <Input value="{model3>R}" id="textw19" visible="{model3>inp}" type="Number" valueState="Success" valueStateText="Enter Number" submit="onInp3Submit"  />
+                                <Text text='{model3>R}' id="009" visible="{model3>text}" /> </HBox>
+
+                                <HBox id="33">
+                                <Input value="{model3>I}" id="tewxt29" visible="{model3>inp}" type="Number" valueState="Success" valueStateText="Enter Number" submit="onInp3Submit" />
+                                    <Text text='{model3>I}' id="0f09" visible="{model3>text}" />
+                                </HBox>
+                                <HBox id="3332">
+                                <Input value="{model3>C}" id="texwt39" visible="{model3>inp}" type="Number" valueState="Success" valueStateText="Enter Number" submit="onInp3Submit" />
+                                <Text text='{model3>C}' id="0f0e9" visible="{model3>text}" />
+                                </HBox>
+                                <HBox id="3e332">
+                                <Input value="{model3>E}" id="texwt49" visible="{model3>inp}" type="Number" valueState="Success" valueStateText="Enter Number" submit="onInp3Submit" />
+                                <Text text='{model3>E}' id="0fe0e9" visible="{model3>text}" />
+                                </HBox>
+
+                                <HBox id="3e3t32">
+                                <Input value="{model3>F}" id="tewxt59" visible="{model3>inp}" type="Number" valueState="Success" valueStateText="Enter Number" submit="onInp3Submit" />
+                                <Text text='{model3>F}' id="0fet0e9" visible="{model3>text}" />
+                                </HBox>
+                                <HBox id="3ee3t32">
+                                <Input value="{model3>W}" id="texwt69" visible="{model3>inp}" type="Number" valueState="Success" valueStateText="Enter Number" submit="onInp3Submit" />
+                                <Text text='{model3>W}' id="0fet0ed9" visible="{model3>text}" />
+                                </HBox>
+                                <Text text="{model3>T}" id="text7w9" />
+                                <Text text="{model3>EF}" id="tewxt89"/>
+                                
+          </cells>
+                        </ColumnListItem>
+
+                     
+                    </items>
+                    <columns>
+                        <Column id="colum1n09">
+                            <header>
+                                <Label text="Complexity" id="lab1el09"/>
+                            </header>
+                        </Column>
+                        <Column id="colum1n19">
+                            <header>
+                                <Label text="Report" id="la1bel19"/>
+                            </header>
+                        </Column>
+                        <Column id="colum1n29">
+                            <header>
+                                <Label text="Interface" id="lab1el29"/>
+                            </header>
+                        </Column>
+                       <Column id="col1umn39">
+                            <header>
+                                <Label text="Conversion" id="labe1l39"/>
+                            </header>
+                        </Column>
+                       <Column id="colu1mn49">
+                            <header>
+                                <Label text="Enhancement" id="lab1el49"/>
+                            </header>
+                        </Column>
+
+                     <Column id="col1umn59">
+                            <header>
+                                <Label text="Form" id="lab1el95"/>
+                            </header>
+                        </Column>
+
+                                             <Column id="colu1mn96">
+                            <header>
+                                <Label text="Workflow" id="lab1e9l6"/>
+                            </header>
+                        </Column>
+
+                                                                     <Column id="9co1lumn7">
+                            <header>
+                                <Label text="Total Objects" id="lab1e9l7"/>
+                            </header>
+                        </Column>
+                                                                     <Column id="c9ol1umn8">
+                            <header>
+                                <Label text="Efforts(hrs.)" id="lab1el89"/>
+                            </header>
+                        </Column>
+                        
+                        
+                        
+                        </columns></Table>
+
+                        </content>
+                    </IconTabFilter>
+                    </items>
+            <content>
+               
+            </content>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>
